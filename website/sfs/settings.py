@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'sfs',
 ]
 
-MIDDLEWARE = [
+MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -82,11 +82,20 @@ DATABASES = {
     #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     # }
 
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'sfs',
+    #     'USER': 'sa-shikyo',
+    #     'PASSWORD': 'Password0',
+    #     'HOST': 'localhost',
+    #     'PORT': '3306',
+    # }
+
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'sfs',
         'USER': 'sa-shikyo',
-        'PASSWORD': 'Password0',
+        'PASSWORD': 'Password1',
         'HOST': 'localhost',
         'PORT': '3306',
     }
@@ -142,3 +151,7 @@ STATICFILES_DIRS = (
 # コマンド: django-admin collectstatic
 #           python manage.py collectstatic
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_all/').replace('\\', '/')
+
+
+# Warning : Changing AUTH_USER_MODEL has a big effect on your database structure.
+# AUTH_USER_MODEL = 'sfs.SFS_ACCOUNT'

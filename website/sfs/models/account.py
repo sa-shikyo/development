@@ -20,3 +20,6 @@ class SFS_ACCOUNT(models.Model):
     class Meta:
         app_label = 'sfs'
         db_table  = 'm_account'
+        verbose_name = _(u'アカウント')
+        verbose_name_plural = _(u'業務 : アカウント (%s)' % db_table)
+        ordering = ['-id', ]

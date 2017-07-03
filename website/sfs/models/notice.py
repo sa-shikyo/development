@@ -18,3 +18,6 @@ class SFS_NOTICE(models.Model):
     class Meta:
         app_label = 'sfs'
         db_table  = 'm_notice'
+        verbose_name = _(u'お知らせ')
+        verbose_name_plural = _(u'業務 : お知らせ (%s)' % db_table)
+        ordering = ['-id', ]
