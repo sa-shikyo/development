@@ -6,9 +6,9 @@ from django.utils.translation import ugettext_lazy as _
 from django.utils import timezone
 
 
-class SFS_ACCOUNT(models.Model):
+class SfsAccount(models.Model):
     """
-    ユーザーテーブル
+    ユーザーテーブル(m_account)
     """
 
     email       = models.EmailField(_(u'メールアドレス'), max_length=255, null=False, blank=False)

@@ -8,4 +8,4 @@ from django.apps import AppConfig
 class ThisAppConfig(AppConfig):
 
     name = 'sfs'
-    verbose_name = u'ああああ'
+    verbose_name = u'SunFlower-Soft'

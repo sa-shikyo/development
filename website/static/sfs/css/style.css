@@ -80,7 +80,7 @@ ul li a:hover {
 }
 
 .contents {
-    background-color: #f0f2f7;
+    background-color: #FFFFFF;
     width: 100%;
     height: auto;
 }
@@ -95,7 +95,6 @@ ul li a:hover {
     width: 100%;
     height: 600px;
     margin-top: 30px;
-    border: 1px solid #000000;
 }
 
 .icon_01 {
@@ -404,6 +403,10 @@ ul li a:hover {
     height: auto;
     margin-top: 20px;
     padding-left: 10px;
+}
+
+.list_table_box {
+    box-shadow: 6px 6px 3px #888;
 }
 
 table {

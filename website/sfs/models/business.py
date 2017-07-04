@@ -6,9 +6,9 @@ from django.utils.translation import ugettext_lazy as _
 from django.utils import timezone
 
 
-class SfsManagermsg(models.Model):
+class SfsBusiness(models.Model):
     """
-    管理者のメッセージテーブル(m_managermsg)
+    業務テーブル(m_business)
     """
 
     content     = models.TextField(_(u'内容'), null=False, blank=False)
@@ -19,7 +19,7 @@ class SfsManagermsg(models.Model):
 
     class Meta:
         app_label = 'sfs'
-        db_table  = 'm_managermsg'
-        verbose_name = _(u'管理者のメッセージ')
-        verbose_name_plural = _(u'業務 : 管理者のメッセージ (%s)' % db_table)
+        db_table  = 'm_business'
+        verbose_name = _(u'業務')
+        verbose_name_plural = _(u'業務 : 業務 (%s)' % db_table)
         ordering = ['-id', ]
