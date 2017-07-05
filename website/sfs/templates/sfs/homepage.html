@@ -41,9 +41,7 @@
                 <div class="message_title_02">{{_('社長からのメッセージ')}}</div>
             </div>
             <div class="line_02"></div>
-                <div class="message_content">
-                    {{marangemsg}}
-                </div>
+            <div class="message_content">{{managermsg.content}}</div>
 <!--             <div class="message_content">
                 {{_('&nbsp;&nbsp;&nbsp;&nbsp;変化の激しい世の中で、数々の困難に直面すると思いますが、')}}
                 {{_('「逆水行舟、不進則退」の言葉を常に念頭に置いてます。')}}
@@ -63,8 +61,8 @@
                     {{_('陳磊')}}&nbsp;&nbsp;&nbsp;&nbsp;
                     </br>
                     {{_('2017年07月')}}
-                </div> -->
-            </div>
+                </div>
+            </div> -->
         </div>
         <div class="topic">
             <div class="topic_title">
@@ -73,7 +71,13 @@
             </div>
             <div class="line_02"></div>
             <div class="topic_content">
+            {% for one in topic %}
                 <div class="news">
+                    <div>{{one.apply_begin}}</div>
+                    <div>{{one.content}}</div>
+                </div>
+            {% endfor %}
+<!--                 <div class="news">
                     <div>{{_('2017年07月01日')}}</div>
                     <div>{{_('')}}</div>
                 </div>
@@ -84,7 +88,7 @@
                 <div class="news">
                     <div>{{_('2017年07月01日')}}</div>
                     <div>{{_('')}}</div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
