@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+from sfs.models import SfsCaption
 
 def captions(func):
     """
@@ -17,9 +18,12 @@ def captions(func):
                 # -------------------------
                 # caption情報を取得
                 # -------------------------
-                caption_info = 
+                captions = SfsCaption.objects.filter()
+                # caption_info = SfsCaption.objects.filter()
+                # for one in caption_info
 
-                request.captions = caption_info
+
+                request.captions = captions
 
 
         return func(request, *args, **kwargs)
