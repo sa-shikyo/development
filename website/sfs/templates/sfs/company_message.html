@@ -16,38 +16,65 @@
                 <table class="list_table_box">
                     <tr>
                         <th>{{_('会社名')}}</th>
-                        <td>{{_('SunFlower-Soft株式会社')}}</td>
+                    {% if company_info.company_name %}
+                        <td>{{company_info.company_name}}</td>
+                    {% else %}
+                        <td></td>
+                    {% endif %}
                     </tr>
                     <tr>
                         <th>{{_('成立日')}}</th>
-                        <td>{{_('2017年08月01日')}}</td>
+                    {% if company_info.create_date %}
+                        <td>{{company_info.create_date}}</td>
+                    {% else %}
+                        <td></td>
+                    {% endif %}
                     </tr>
                     <tr>
                         <th>{{_('代表者')}}</th>
-                        <td>{{_('陳磊')}}</td>
+                    {% if company_info.manager_name %}
+                        <td>{{company_info.manager_name}}</td>
+                    {% else %}
+                        <td></td>
+                    {% endif %}
                     </tr>
                     <tr>
                         <th>{{_('資本金')}}</th>
-                        <td>{{_('500万円')}}</td>
+                    {% if company_info.money %}
+                        <td>{{company_info.money}}</td>
+                    {% else %}
+                        <td></td>
+                    {% endif %}
                     </tr>
                     <tr>
                         <th>{{_('所在地')}}</th>
+                    {% if company_info.address %}
+                        <td>{{company_info.address}}</td>
+                    {% else %}
                         <td></td>
+                    {% endif %}
                     </tr>
                     <tr>
                         <th>{{_('Email')}}</th>
+                    {% if company_info.email %}
+                        <td>{{company_info.email}}</td>
+                    {% else %}
                         <td></td>
+                    {% endif %}
                     </tr>
                     <tr>
                         <th>{{_('Tel')}}</th>
+                    {% if company_info.telphone %}
+                        <td>{{company_info.telphone}}</td>
+                    {% else %}
                         <td></td>
+                    {% endif %}
                     </tr>
                 </table>
             </div>
             <div class="content_content_01" style="margin-top: 50px;">
                 <div class="icon_03"></div>
                 <div class="title_01">{{_('沿&nbsp;&nbsp;革')}}</div>
-                <label></label>
             </div>
             <div class="content_content_02">
                 <table class="list_table_box">
