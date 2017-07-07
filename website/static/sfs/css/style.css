@@ -426,7 +426,53 @@ th {
 td {
     width: 770px;
     height: 30px;
-    border: 1px solid #e2e2e2;
+    /*border: 1px solid #e2e2e2;*/
+    border: 1px solid #CCCCCC;
     padding: 0px 10px;
     font-size: 13px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    line-height: 32px;
+    vertical-align: middle;
+}
+h2.hdg-block {
+    display: table;
+    width: 100%;
+    border: 1px solid #cccccc;
+    border-top: 4px solid #d90000;
+    background-color: #f2ede2;
+    padding: 8px 0px 11px 13px;
+    margin: 20px 0px 0px 0px;
+    font-size: 2rem;
+    box-sizing: border-box;
+}
+
+.table-nowrap {
+    table-layout:fixed;
+}
+
+.table-nowrap td {
+    font-size: 11pt;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table-tr-bg tbody tr:nth-child(2n+1) {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #ffffff;
+}
+.table-tr-bg tbody tr:nth-child(2n){
+    text-align: center;
+    vertical-align: middle;
+    background-color: #e6e6e6;
 }

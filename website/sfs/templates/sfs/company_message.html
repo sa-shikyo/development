@@ -1,13 +1,16 @@
 {% extends 'base.html' %}
 
+{% comment %}
 {% block html_title %}{{_('社会情報')}} | {{_('SunFlower-Soft')}}{% endblock %}
 {% block header %}{% include 'sfs/moudel/header.html' %}{% endblock %}
 {% block title %}
     <div class="title"><img src="../static/sfs/images/sfs_title_01.jpg"></div>
 {% endblock %}
+{% endcomment %}
 {% block content %}
     <div id="contents" class="content">
         <div class="content_content">
+        {% comment %}
             <div class="content_content_01">
                 <div class="icon_03"></div>
                 <div class="title_01">{{_('会社概要')}}</div>
@@ -84,6 +87,18 @@
                     </tr>
                 </table>
             </div>
+        {% endcomment %}
+            <table class="table-nowrap table-tr-bg">
+            {% for i in " "|rjust:"5" %}
+                <!-- <tr id="i" role="row" class="even" style="height: 60px;"> -->
+                <tr style="height: 60px;">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            {% endfor %}
+            </table>
         </div>
     {% comment %}
         <div id="content_goto" class="content_goto">
