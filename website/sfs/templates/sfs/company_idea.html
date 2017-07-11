@@ -6,8 +6,9 @@
     <div class="title"><img src="../static/sfs/images/sfs_title_01.jpg"></div>
 {% endblock %}
 {% block content %}
-    <div id="contents" class="content">
+    <div id="contents" class="content" style="min-height: 300px;">
         <div class="content_content">
+        {% comment %}
             <div class="content_content_01">
                 <div class="icon_03"></div>
                 <div class="title_01">{{_('経営理念')}}</div>
@@ -15,7 +16,11 @@
             <div class="content_content_02">
             {% if idea.content %}{{idea.content}}{% endif %}
             </div>
-            <h2 class="hdg-block">{{_('基本情報')}}</h2>
+        {% endcomment %}
+            <h2 class="hdg-block">{{_('経営理念')}}</h2>
+            <div class="content_content_02" style="min-height: 149px;">
+            {% if idea.content %}{{idea.content}}{% endif %}
+            </div>
         </div>
     {% comment %}
         <div id="content_goto" class="content_goto">

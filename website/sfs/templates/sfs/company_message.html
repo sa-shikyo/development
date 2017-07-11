@@ -1,22 +1,22 @@
 {% extends 'base.html' %}
 
-{% comment %}
 {% block html_title %}{{_('社会情報')}} | {{_('SunFlower-Soft')}}{% endblock %}
 {% block header %}{% include 'sfs/moudel/header.html' %}{% endblock %}
 {% block title %}
     <div class="title"><img src="../static/sfs/images/sfs_title_01.jpg"></div>
 {% endblock %}
-{% endcomment %}
 {% block content %}
-    <div id="contents" class="content">
+    <div id="contents" class="content" style="min-height: 580px;">
         <div class="content_content">
         {% comment %}
             <div class="content_content_01">
                 <div class="icon_03"></div>
                 <div class="title_01">{{_('会社概要')}}</div>
             </div>
-            <div class="content_content_02">
-                <table class="list_table_box">
+        {% endcomment %}
+            <h2 class="hdg-block">{{_('会社概要')}}</h2>
+            <div class="content_content_02" style="padding: 0; width: 988px; min-height: 200px;">
+                <table class="table-nowrap table-tr-bg">
                     <tr>
                         <th>{{_('会社名')}}</th>
                     {% if company_info.company_name %}
@@ -73,21 +73,32 @@
                         <td></td>
                     {% endif %}
                     </tr>
+                    <tr>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td></td>
+                    </tr>
                 </table>
             </div>
+        {% comment %}
             <div class="content_content_01" style="margin-top: 50px;">
                 <div class="icon_03"></div>
                 <div class="title_01">{{_('沿&nbsp;&nbsp;革')}}</div>
             </div>
-            <div class="content_content_02">
-                <table class="list_table_box">
+        {% endcomment %}
+            <h2 class="hdg-block" style="margin-top: 50px;">{{_('沿&nbsp;&nbsp;革')}}</h2>
+            <div class="content_content_02" style="padding: 0; width: 988px; min-height: 30px;">
+                <table class="table-nowrap table-tr-bg">
                     <tr>
                         <th>{{_('2017年08月')}}</th>
                         <td></td>
                     </tr>
                 </table>
             </div>
-        {% endcomment %}
+        {% comment %}
             <table class="table-nowrap table-tr-bg">
             {% for i in " "|rjust:"5" %}
                 <!-- <tr id="i" role="row" class="even" style="height: 60px;"> -->
@@ -98,6 +109,7 @@
                     <td>4</td>
                 </tr>
             {% endfor %}
+        {% endcomment %}
             </table>
         </div>
     {% comment %}

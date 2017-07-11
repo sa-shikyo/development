@@ -6,13 +6,16 @@
     <div class="title"><img src="../static/sfs/images/sfs_title_01.jpg"></div>
 {% endblock %}
 {% block content %}
-    <div id="contents" class="content">
+    <div id="contents" class="content" style="min-height: 300px;">
         <div class="content_content">
+        {% comment %}
             <div class="content_content_01">
                 <div class="icon_03"></div>
                 <div class="title_01">{{_('業務内容')}}</div>
             </div>
-            <div class="content_content_02">
+        {% endcomment %}
+        <h2 class="hdg-block">{{_('業務内容')}}</h2>
+            <div class="content_content_02" style="min-height: 149px;">
             {% if business.content %}{{business.content}}{% endif %}
             </div>
         </div>

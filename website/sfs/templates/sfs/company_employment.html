@@ -6,15 +6,18 @@
     <div class="title"><img src="../static/sfs/images/sfs_title_01.jpg"></div>
 {% endblock %}
 {% block content %}
-    <div id="contents" class="content">
+    <div id="contents" class="content" style="min-height: 750px;">
         <div class="content_content">
+        {% comment %}
             <div class="content_content_01">
                 <div class="icon_03"></div>
                 <div class="title_01">{{_('採用情報')}}</div>
                 <label></label>
             </div>
-            <div class="content_content_02">
-                <table class="list_table_box">
+        {% endcomment %}
+            <h2 class="hdg-block">{{_('採用情報')}}</h2>
+            <div class="content_content_02" style="padding: 0; width: 988px;">
+                <table class="table-nowrap table-tr-bg">
                     <tr>
                         <th>{{_('募集職種')}}</th>
                         <td>
