@@ -27,10 +27,11 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 
     # sfs
-    url(r'^homepage/',           sfs_homepage,           name='sfs.homepage'),
-    url(r'^company_message/',    sfs_company_message,    name='sfs.company_message'),
-    url(r'^company_idea/',       sfs_company_idea,       name='sfs.company_idea'),
-    url(r'^comoany_business/',   sfs_company_business,   name='sfs.company_business'),
-    url(r'^comoany_employment/', sfs_company_employment, name='sfs.company_employment'),
+    url(r'^$',                    sfs_homepage,           name='sfs.homepage'),
+    url(r'^homepage/$',           sfs_homepage,           name='sfs.homepage'),
+    url(r'^company_message/$',    sfs_company_message,    name='sfs.company_message'),
+    url(r'^company_idea/$',       sfs_company_idea,       name='sfs.company_idea'),
+    url(r'^comoany_business/$',   sfs_company_business,   name='sfs.company_business'),
+    url(r'^comoany_employment/$', sfs_company_employment, name='sfs.company_employment'),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

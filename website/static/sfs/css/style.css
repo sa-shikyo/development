@@ -136,7 +136,8 @@ ul li a {
     font-size: 18px;
     line-height: 18px;
     font-weight: bold;
-    color: #8c919b;
+    /*color: #8c919b;*/
+    color: #458B00;
     /*text-align: center;*/
     text-align: right;
     /*border-left: 1px solid #e2e2e2;*/
@@ -150,6 +151,9 @@ ul li a:link {
     text-decoration: none;
 }
 
+ul li a:hover {
+    color: #FFA500;
+}
 
 /* main */
 
